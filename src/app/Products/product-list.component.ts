@@ -85,7 +85,8 @@ export class ProductListComponent {
 
 
       }
-      _listFilter: string = 'cart';
+
+      _listFilter: string;
       set listFilter(value:string){
 
         this._listFilter = value;
@@ -103,6 +104,10 @@ product.productName.toLowerCase().indexOf(filterBy) !== -1)
 
 
 
+      }
+
+      onRatingClicked(message: string): void{
+        this.Pagetitle = message;
       }
 }
 
